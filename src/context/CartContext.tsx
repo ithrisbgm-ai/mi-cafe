@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import { Product, CartItem, OrderConfirmationData, OrderPayload, CheckoutFormData } from '../types';
-import { getActiveGoogleScriptUrl, GOOGLE_SCRIPT_URL } from '../config';
+import { getActiveGoogleScriptUrl } from '../config';
 
 interface CartContextType {
   cart: CartItem[];
@@ -160,7 +160,6 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
     const scriptUrl = getActiveGoogleScriptUrl();
     const isPlaceholderUrl =
       !scriptUrl ||
-      scriptUrl === GOOGLE_SCRIPT_URL ||
       scriptUrl.includes('PASTE_GOOGLE_APPS_SCRIPT_URL_HERE') ||
       !scriptUrl.startsWith('http');
 
