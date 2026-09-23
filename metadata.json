@@ -1,0 +1,6 @@
+{
+  "name": "MI CAFE - Artisan Coffee & Eatery",
+  "description": "Order freshly brewed coffee, artisanal teas, snacks and desserts online from MI CAFE.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
